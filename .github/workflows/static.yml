@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .search-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 70%;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .book-categories {
+            padding: 20px;
+            background-color: white;
+        }
+        .categories-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .category {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            width: 180px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .category:hover {
+            background-color: #45a049;
+        }
+        .featured-books {
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .book-item {
+            background-color: #f9f9f9;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .book-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .book-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Learnify</h1>
+        <p>Browse the best e-books in one place</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Search for Books</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-container">
+        <h2>Search for your favorite book</h2>
+        <input type="text" placeholder="Search here..." />
+    </section>
+
+    <!-- Book Categories Section -->
+    <section class="book-categories">
+        <h2>Categories</h2>
+        <div class="categories-list">
+            <div class="category">Science</div>
+            <div class="category">History</div>
+            <div class="category">Literature</div>
+            <div class="category">Technology</div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <h2>Featured Books</h2>
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Short description of the book...</p>
+        </div>
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Short description of the book...</p>
+        </div>
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 3">
+            <h3>Book Title 3</h3>
+            <p>Short description of the book...</p>
+        </div>
+    </section>
+
+</body>
+</html>
